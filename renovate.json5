@@ -4,13 +4,20 @@
     "config:base"
   ],
   "packageRules": [
+    /* Group High and Very High Confidence updates */
     {
       "groupName": "high merge confidence",
       "matchConfidence": ["high", "very high"]
     },
+    
+    /* Group by update type (patch/minor, major) */
     {
-      "groupName": "minor and patch",
+      "groupName": "patch and minor",
       "matchUpdateTypes": ["minor", "patch"]
-    }    
+    },
+    {
+      "groupName": "major",
+      "matchUpdateTypes": ["major"]
+    }
   ]
 }
