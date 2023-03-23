@@ -7,6 +7,10 @@
     {
       "groupName": "high merge confidence",
       "matchConfidence": ["high", "very high"]
-    }
+    },
+    {
+      "groupName": "minor and patch",
+      "matchUpdateTypes": ["minor", "patch"]
+    }    
   ]
 }
