@@ -4,9 +4,16 @@
     "config:base"
   ],
   "packageRules": [
-    /* Suppress major and minor updates */
     {
-      "matchUpdateTypes": ["major", "minor"],
+      "matchUpdateTypes": ["major"],
+      "dependencyDashboardApproval": true,
+    }, 
+    {
+      "matchUpdateTypes": ["minor"],
+      "dependencyDashboardApproval": true,
+    }, 
+    {
+      "matchUpdateTypes": ["patch"],
       "dependencyDashboardApproval": true,
     }, 
     
