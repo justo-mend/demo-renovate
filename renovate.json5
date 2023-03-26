@@ -4,13 +4,19 @@
     "config:base"
   ],
   "packageRules": [
-    /* Group High and Very High Confidence updates */
+    /* Suppress major and minor updates */
+    {
+      "matchUpdateTypes": ["major", "minor"],
+      "dependencyDashboardApproval": true,
+    }, 
+    
+    /* Group High and Very High Confidence updates 
     {
       "groupName": "high merge confidence",
       "matchConfidence": ["high", "very high"]
     },
-    
-    /* Group by update type (patch/minor, major) */
+    */
+    /* Group by update type (patch/minor, major) 
     {
       "groupName": "patch and minor",
       "matchUpdateTypes": ["minor", "patch"]
@@ -19,5 +25,6 @@
       "groupName": "major",
       "matchUpdateTypes": ["major"]
     }
+    */
   ]
 }
